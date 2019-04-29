@@ -1,17 +1,17 @@
 pipeline {
       agent any
          stages {
-            stage('one') {
+            stage('One') {
                    steps {
                          echo 'hi, this is jenkin job list'
                          }
                          }
-            stage('two') {
+            stage('Two') {
                     steps {
                           input('do u want to proceed')
                           }
                           }
-            stage('three'){
+            stage('Three'){
                     steps {
                           when {
                                 not {
@@ -19,10 +19,10 @@ pipeline {
                                      }
                                 }
                            steps {
-                                   echo 'hello'
+                                   echo "hello"
                                  }
                     } }
-              stage('four') {
+              stage('Four') {
                        steps {
                            parallel {
                               stage('unit test') {
