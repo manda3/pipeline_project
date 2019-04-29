@@ -5,7 +5,7 @@ pipeline {
                    steps {
                          echo 'hi, this is jenkin job list'
                          }
-                         {
+                         }
             stage('two') {
                     steps {
                           input('do u want to proceed')
@@ -19,15 +19,15 @@ pipeline {
                                      }
                                 }
                            steps {
-                                   echo "hello"
+                                   echo 'hello'
                                  }
-                            }
+                    } }
               stage('four') {
                        steps {
                            parallel {
                               stage('unit test') {
                                            steps  {
-                                                echo "running the unit test"
+                                                echo 'running the unit test'
                                                   }
                                                   }
                                stage('integration test') {
