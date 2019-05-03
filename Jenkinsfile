@@ -16,10 +16,5 @@ pipeline {
                                    echo "hello"
                                  }
                           } 
-              stage('Four') {
-                       steps {
-                           
-
-                                   }
-                           }
+         }
 }
