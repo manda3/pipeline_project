@@ -1,19 +1,19 @@
 pipeline {
       agent any
          stages {
-            stage('One') {
+            stage('build') {
                    steps {
-                         echo 'hi, this is jenkin job list'
+                         echo 'build the job'
                          }
                          }
-            stage('Two') {
+            stage('compile') {
                     steps {
-                          input('do u want to proceed')
+                          echo 'compile the job'
                           }
                           }
-            stage('Three'){
+            stage('package'){
                            steps {
-                                   echo "hello"
+                                   echo "package the job"
                                  }
                           } 
          }
